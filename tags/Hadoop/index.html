@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://biohl.cn">
-  <title>Bio_notes.LCMS基础 | BioHL</title>
+  <title>Tag: Hadoop | BioHL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="液相色谱串联三重四级杆质谱_notes1.">
-<meta name="keywords" content="Bio_notes">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Bio_notes.LCMS基础">
-<meta property="og:url" content="http://biohl.cn/2019/06/20/Bio-notes-LCMS基础/index.html">
+  <meta name="description" content="LambYang的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BioHL">
+<meta property="og:url" content="http://biohl.cn/tags/Hadoop/index.html">
 <meta property="og:site_name" content="BioHL">
-<meta property="og:description" content="液相色谱串联三重四级杆质谱_notes1.">
+<meta property="og:description" content="LambYang的个人博客">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-08T08:15:45.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bio_notes.LCMS基础">
-<meta name="twitter:description" content="液相色谱串联三重四级杆质谱_notes1.">
+<meta name="twitter:title" content="BioHL">
+<meta name="twitter:description" content="LambYang的个人博客">
   
     <link rel="alternative" href="/atom.xml" title="BioHL" type="application/atom+xml">
   
@@ -149,161 +147,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Bio-notes-LCMS基础" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Bio_notes.LCMS基础
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/07/08/code·notes-安装Hadoop和Spark集群/" class="archive-article-date">
+  	<time datetime="2019-07-08T11:10:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-08</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/07/08/code·notes-安装Hadoop和Spark集群/">code·notes.安装Hadoop和Spark集群</a>
     </h1>
   
 
-        
-        <a href="/2019/06/20/Bio-notes-LCMS基础/" class="archive-article-date">
-  	<time datetime="2019-06-20T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>液相色谱串联三重四级杆质谱_notes1.</p>
-<a id="more"></a>
-
-<h5 id="基本概念："><a href="#基本概念：" class="headerlink" title="基本概念："></a>基本概念：<br></h5><p>1.质谱学：一门研究气相离子结构、性质及反应行为的科学。<br><br>2.质谱作用：定性确定化合物结构；定量研究混合物组成。<br><br>3.质谱分析过程：样品通过进样系统进入离子源，由于结构性质不同而电离为各种不同荷值比的分子离子和碎片离子，而后,带有样品信息的离子碎片被加速进入质量分析器，不同的离子在质量分析器中被分离并按质荷比大小依次抵达检测器，经记录即得到按不同质荷比排列的离子质量谱，即质谱（mass spectrum)。<br><br>4.质谱图：按照离子的质荷比大小依次排列形成的图谱。<br></p>
-<p>样品引进方法：连续进样、分流进样、流动注射进样、液相色谱<br><br>离子源：ESI（电喷雾离子化）、APCI、APPI</p>
-<h5 id="简要操作"><a href="#简要操作" class="headerlink" title="简要操作"></a>简要操作</h5><ol>
-<li><p>开关机：<br></p>
-<blockquote>
-<p>开：氮气发生器（气压正常）-机械泵电源-等待约15~30min-质谱主机-工作站<br><br> 关：工作站-质谱主机（按质谱主机左后侧 Vent 3S，分子涡轮泵下降，等15～30min）、质谱主机右后侧电源-等待15min-机械泵电源-氮气发生器</p>
-</blockquote>
-</li>
-<li><p>每次开关机需做PPG质量校正 <br></p>
-</li>
-<li><p>Analyst软件:<br><br> Configure：配置，设置硬件、安全和报告<br><br> Ture and Calibrate：调谐与校准，校准仪器和方法优化<br><br> Acquire：采集，设置采集方法和批文件建立<br><br> Explore：浏览，浏览数据文件<br><br> Quantitate：定量，已被MultiQuant替代<br></p>
-</li>
-<li><p>进样针及管路清洗溶剂：50%（v/v）甲醇水<br></p>
-</li>
-<li><p>质量校准、分辨率校准<br><br> 通常推荐自动调谐方式进行质量校准，推荐每月一次（可接受三月一次）。<br></p>
- <figure class="highlight plain"><figcaption><span><br>POS PPG 2E-6M/NEG PPG ,3E -4M</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">	Analyst:project(Installation)-Hardware Configuration-Activate profile(MassOnly)-Tune and Calibrate-点击T（噗音、右下角质谱状态绿色）-Manual Tuning-Open File(建议时间最近方法)-正离子调谐采样方法&lt;br/&gt;</span><br><span class="line">	调谐：</span><br><span class="line">    1️合适的质量校准液吸入针筒，链接管路-Start Syringe pump-离子源Peek处黑色螺帽（针尖端露出约2mm）-采样的总离子流信号稳定后关闭质谱参数设置及运行窗口</span><br><span class="line">	2️Instrument Optimization- Adjust   instrument…-Next-Approved Tuning-Next-Tuning Solution:PPG（负离子PPG 3000）/Quad(Q1/Q3:10、200、1000Da/s)-Go-Fish,Yes</span><br><span class="line"></span><br><span class="line">1. 质谱参数优化与LCMS方法建立&lt;br/&gt;</span><br><span class="line">    ```针泵连续进样标准溶液、Manual Tuning下质谱参数优化、一级质谱扫描（Q1 Scan)==&gt;目标化合物的母离子信息；碎片离子扫描（Product lon Scan)==&gt;目标化合物的子离子信息、MRM（多反应监测）离子对、电参数最优化</span><br></pre></td></tr></table></figure>
-
-<p> 化合物信息（分子式、结构式、分子量、参考质谱方法）<br> 标准溶液：50%V/V甲醇（或乙腈）水溶液（正离子模式测定碱性化合物，加0.1%甲酸）</p>
-</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>撸起袖子加油干<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/alpay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/weixinpay.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Bio_notes</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hadoop</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2018/01/01/MarkDown写作常用语法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">MarkDown写作常用语法</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#基本概念："><span class="toc-number">1.</span> <span class="toc-text">基本概念：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#简要操作"><span class="toc-number">2.</span> <span class="toc-text">简要操作</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -326,9 +223,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -396,11 +293,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Bio_notes</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Code</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Bio_notes</a>
+                <a href="javascript:void(0)" class="js-tag color4">ML_PlanA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Hadoop</a>
               </li>
             
             <div class="clearfix"></div>
